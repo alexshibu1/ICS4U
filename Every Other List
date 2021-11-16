@@ -1,0 +1,27 @@
+
+#setting up varibles 
+boolean = True
+user_number_list=[]
+cnt = 0
+#while loop which allows users to enter integers.
+while boolean:
+  user_number = input('Enter elements of a list(exit: x): ')
+  if user_number == "x":
+    boolean = False
+  else:
+    user_number_list.append(user_number)
+
+#function that brings in the lits then isolates the every second one to export the final list
+def every_other(my_list):
+  user_number_list2 = []
+  cnt = 0
+  while cnt <= len(my_list):
+    if cnt % 2 == 0:
+      user_number_list2.append(my_list[cnt])
+      
+    cnt +=1
+
+#final list
+  print (user_number_list2)
+
+every_other(user_number_list)
