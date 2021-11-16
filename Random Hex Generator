@@ -1,0 +1,15 @@
+
+#import random
+import random
+
+#set char size
+size=6
+
+print("#", end="" )
+
+#while loop to print the hex and adding end="" to create a full 6 character hex
+while size > 0:
+  value = random.choice("123456789ABCDEF" )
+
+  print (value, end="") 
+  size -= 1
